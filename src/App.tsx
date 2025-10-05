@@ -12,12 +12,12 @@ import { HostelDetail } from "./pages/hostel/HostelDetail";
 function App() {
   return (
     <>
-      <div className="bg-[#F4F4F4] font-roboto text-lg text-white grid grid-cols-[1fr_8fr]">
+      <div className="relative bg-[#F4F4F4] font-roboto text-lg text-white flex flex-col  md:flex-row">
         <section id="nav-bar" >
          <NavBar />
         </section>
         {/* ---------------------- Routes --------------------------------  */}
-        <section id="main-bar" className="">
+        <section id="main-bar" className=" ">
           <Routes>
             <Route path='/' element={<Hostels />} />
             <Route path='/bookings' element={<Bookings />} />

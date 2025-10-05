@@ -8,7 +8,7 @@ import { Filters } from "../../components/ui/Filters";
 
 export const Hostels = () => {
     return (
-        <div className="h-screen p-8 text-black overflow-y-scroll">
+        <div className="h-screen p-4 text-black overflow-y-scroll">
             {/*--------------------- Hostel Filters -------------------- */}
             <div className="">
                 <Filters />
@@ -20,7 +20,7 @@ export const Hostels = () => {
                 <button className="text-[#181818] focus:text-orange-500">Popular</button>
                 <button className="text-[#181818] focus:text-orange-500">Nearest</button>
           </div>
-            <div className=" grid grid-cols-4 gap-4 ">
+            <div className=" flex flex-wrap gap-3 p-3">
                 <Link to='/hostel/detail'>
                      <HostelCard />
                 </Link>            

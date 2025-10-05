@@ -1,6 +1,6 @@
 export const Filters = () => {
   return (
-    <div className="flex gap-3 justify-start">
+    <div className="flex flex-wrap gap-2 justify-start">
       {/* ------------- Search --------------------- */}
       <div
         id="search"
@@ -11,7 +11,7 @@ export const Filters = () => {
           placeholder="Search Here..."
           className="border-none outline-0"
         />
-        <span className="flex gap-3">
+        <span className="flex gap-2">
           <div className="border-l-2 h-6.5"></div>
           <button>
             <svg
@@ -31,12 +31,12 @@ export const Filters = () => {
         </span>
           </div>
           {/* ------------------ Price Filter ----------------------------------- */}
-          <div id="price" className="flex gap-2 justify-start items-center rounded-3xl border-zinc-400 border-1 p-2">
+          <div id="price" className="flex gap-1 justify-start items-center rounded-3xl border-zinc-400 border-1 p-2">
               <input type="text" placeholder="Price..." className="border-none outline-0" />
               <span className="text-[#FF5B19]">$$</span>
           </div>
           {/* ------------------ Beds filter  ----------------------- */}
-          <div id="beds" className="bg-[#FF5B19] text-white p-2 rounded-2xl px-5">
+          <div id="beds" className="bg-[#FF5B19] text-white p-1 rounded-2xl px-3">
               <select name="beds-filter" id="beds-filter" className="bg-[#FF5B19] border-none outline-0">
                   <option value="" disabled selected>Room Type</option>
                   <option value="1 Bed" >1 Beds </option>
@@ -46,7 +46,7 @@ export const Filters = () => {
               </select>
           </div>
           {/* ---------------------- Property Type --------------------- */}
-          <div id="beds" className=" text-[#B7BFC5] p-2 border-zinc-400 border-1 rounded-2xl px-5">
+          <div id="beds" className=" text-[#B7BFC5] p-2 border-zinc-400 border-1 rounded-2xl px-3">
               <select name="beds-filter" id="beds-filter" className=" border-none outline-0">
                   <option value="" disabled selected>Property Type</option>
                   <option value="Hostel">Hostel</option>
